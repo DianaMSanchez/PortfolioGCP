@@ -7,14 +7,14 @@
 3. [Screenshots](#screenshots)
 
 
-###Informacion General
+### Informacion General
 <a name="general-info"></a>
 Esta página web muestra un portafolio de servicios que se nutre de los datos recogidos en una base de datos.
 Versión: Beta
 Repositorio del código:
 
 
-###Tecnologías utilizadas.
+### Tecnologías utilizadas.
 <a name="technologies"></a>
 * Django: versión 5.0.1
 * DB Browser for SQL Lite: versión 3.12.2
@@ -22,5 +22,5 @@ Repositorio del código:
 * Python: versión 3.12.1
 ** Extensiones: Pillow
 
-###Screenshots
+### Screenshots
 <a name="screenshots"></a>
