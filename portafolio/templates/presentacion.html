@@ -8,7 +8,7 @@
         <h2>{{ project.nombre }}</h2>
         <p>{{ project.descripcion }}</p>
         
-        <img src="{{project.image.url }}" height="100" />
+        <img src="{{project.image.url }}" alt="{{project.nombre}} height="100" />
         {% if project.url %}
         <a href="{{project.url}}">Link</a>
         {% endif %} {% endfor %}
