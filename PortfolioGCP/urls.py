@@ -19,11 +19,11 @@ from django.urls import path, include
 from django.conf.urls.static import static
 from django.conf import settings
 from portafolio import views 
-from contacto import views
 
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    #path('presentacion/', include('presentacion.urls')),
     path('', views.presentacion, name='presentacion'),
     path('contacto/', include('contacto.urls')),
     #path ('presentacion/', presentacion),
