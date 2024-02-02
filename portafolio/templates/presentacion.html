@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h1 style="color: blue"> Portafolio de servicios.</h1>
+        
+        <h1 style="color: green"> Proyectos.</h1>
+        
+        {% for project in projects %}
+        <h2>{{ project.nombre }}</h2>
+        <p>{{ project.descripcion }}</p>
+        
+        <img src="{{project.image.url }}" height="100" />
+        {% if project.url %}
+        <a href="{{project.url}}">Link</a>
+        {% endif %} {% endfor %}
+    </body>
+</html>

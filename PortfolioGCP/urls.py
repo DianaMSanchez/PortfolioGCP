@@ -16,13 +16,19 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from PortfolioGCP.views import presentacion, proyecto, estudios, publicaciones, redes_sociales 
+from django.conf.urls.static import static
+from django.conf import settings
+from portafolio import views 
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path ('presentacion/', presentacion),
-    path ('proyecto/', proyecto),
-    path ('estudios/', estudios),
-    path ('publicaciones/', publicaciones),
-    path ('redes_sociales/', redes_sociales),
+    path('', views.presentacion, name='presentacion')
+    #path ('presentacion/', presentacion),
+    #path ('proyecto/', proyecto),
+    #path ('estudios/', estudios),
+    #path ('publicaciones/', publicaciones),
+    #path ('redes_sociales/', redes_sociales),
 ]
+
+urlpatterns += static(settings.MEDIA_URL, document_root =settings.MEDIA_ROOT)

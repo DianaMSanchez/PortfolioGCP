@@ -4,13 +4,13 @@ import datetime
 
 
 def presentacion(request): #Presentación 
-    date_time = datetime.datetime.now()
-    documento = open("C:/Proyectos Django/PortfolioGCP/PortfolioGCP/template/presentacion.html")
-    date = Template(documento.read())
-    documento.close()
-    ctx = Context()
-    documento_Renderizado = date.render(ctx)
-    return HttpResponse(documento_Renderizado)
+    return render(request, 'presentacion.html')
+    #documento = open("C:/Proyectos Django/PortfolioGCP/PortfolioGCP/template/presentacion.html")
+    #date = Template(documento.read())
+    #documento.close()
+    #ctx = Context()
+    #documento_Renderizado = date.render(ctx)
+    #return HttpResponse(documento_Renderizado)
 
 def proyecto(request): #Proyecto 
 
