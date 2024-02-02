@@ -23,13 +23,9 @@ from portafolio import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    #path('presentacion/', include('presentacion.urls')),
     path('', views.presentacion, name='presentacion'),
+    path('newProyecto/', views.proyectosAdd, name='newProyecto'), 
     path('contacto/', include('contacto.urls')),
-    #path ('presentacion/', presentacion),
-    #path ('proyecto/', proyecto),
-    #path ('estudios/', estudios),
-    #path ('publicaciones/', publicaciones),
     #path ('redes_sociales/', redes_sociales),
 ]
 

@@ -1,8 +1,12 @@
 <html>
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+    </head>
     <body>
-        <h1 style="color: blue"> Portafolio de servicios.</h1>
+        <h1> Portafolio de servicios.</h1>
         
-        <h1 style="color: green"> Proyectos.</h1>
+        <h2> Proyectos.</h2>
         
         {% for project in projects %}
         <h2>{{ project.nombre }}</h2>

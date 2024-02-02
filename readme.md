@@ -5,7 +5,7 @@
 1. [Información general](#general-info)
 2. [Tecnologías utilizadas](#technologies)
 3. [Screenshots](#screenshots)
-4. [FAQs](#faqs)
+
 
 ###Informacion General
 <a name="general-info"></a>
